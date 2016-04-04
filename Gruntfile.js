@@ -21,7 +21,7 @@ module.exports = function(grunt) {
                 expand: true,
                 cwd: 'src/scss',
                 src: ['**/*.scss'],
-                dest: 'dist',
+                dest: 'dist/css',
                 ext: '.css',
                 options: {
                     style: 'expanded',
@@ -32,7 +32,7 @@ module.exports = function(grunt) {
                expand: true,
                 cwd: 'src/scss',
                 src: ['**/*.scss'],
-                dest: 'dist',
+                dest: 'dist/css',
                 ext: '.min.css',
                 options: {
                     style: 'compressed'
@@ -46,11 +46,11 @@ module.exports = function(grunt) {
                 ]
             },
             dev: {
-                src: 'dist/style.css',
+                src: 'dist/css/style.css',
                 map: true
             },
             prod: {
-                src: 'dist/style.min.css'
+                src: 'dist/css/style.min.css'
             }
         },
         uglify: {
@@ -63,12 +63,12 @@ module.exports = function(grunt) {
                     compress: false
                 },
                 files: {
-                    'dist/script.js': ['src/js/**/*.js']
+                    'dist/js/script.js': ['src/js/**/*.js']
                 }
             },
             prod: {
                 files: {
-                    'dist/script.min.js': ['src/js/**/*.js']
+                    'dist/js/script.min.js': ['src/js/**/*.js']
                 }
             }
         },
