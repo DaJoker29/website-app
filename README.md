@@ -1,4 +1,5 @@
-# {{ Project Title}}
+# Website App
+An app for the new website
 
 Build Instructions
 -------------------
